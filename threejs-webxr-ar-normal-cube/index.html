@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+      model-viewer{
+        width: 800;
+        height: 400;
+      }
+
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webxr Ar</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
   </head>
-  <body>
-    <script type="module" src="/Models/test.js"></script>
+  <body style = "margin: 0px; overflow: hidden;">
+    <model-viewer
+    src = "/scene.gltf"
+    >
+    
   </body>
 </html>
