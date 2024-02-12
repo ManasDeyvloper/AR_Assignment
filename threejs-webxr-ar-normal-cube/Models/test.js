@@ -122,6 +122,10 @@ function render(timestamp, frame) {
     })
     renderer.render(scene, camera)
 }
+xrSession.updateRenderState({
+    depthNear: .010,
+    depthFar: 5.0,
+  });
 
 window.addEventListener('resize', () => {
     sizes.width = window.innerWidth;
